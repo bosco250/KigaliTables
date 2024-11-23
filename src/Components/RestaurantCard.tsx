@@ -24,19 +24,19 @@ const RestaurantCard: React.FC<RestaurantCardProps> = ({
   timeSlots
 }) => {
   return (
-    <div className="max-w-[20rem] rounded-lg overflow-hidden shadow-lg bg-white">
+    <div className="sm:max-w-[20rem] rounded-lg overflow-hidden shadow-lg bg-white">
       <div className="relative">
         <img 
           src={image}
           alt={name}
-          className="w-full h-40 object-cover"
+          className="w-full sm:h-40 object-cover"
         />
       </div>
       
       <div className="px-4 py-3">
         <h3 className="text-xl font-bold mb-2">{name}</h3>
         
-        <div className="flex items-center mb-2">
+        <div className="flex items-center justify-between mb-2">
           <div className="flex items-center">
             {[...Array(5)].map((_, index) => (
               <Star
@@ -53,12 +53,12 @@ const RestaurantCard: React.FC<RestaurantCardProps> = ({
           <span className="text-gray-600">{location}</span>
         </div>
         
-        <div className="flex flex-wrap gap-[6px]">
+        <div className="flex md:gap-[6px] gap-3">
           {timeSlots.map((slot, index) => (
             <Button
               key={index}
               variant="contained"
-              className="!bg-[#DF7117] hover:!bg-[#DF7117]/90 !text-white !rounded-md !text-sm !px-[6px] !py-1 !h-auto"
+              className="!bg-[#DF7117] hover:!bg-[#DF7117]/90 !text-white !rounded-md !text-sm sm:!px-[6px] !px-2 sm:!py-1 py-2 !h-auto"
             >
               {slot.time}
             </Button>

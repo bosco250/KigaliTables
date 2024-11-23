@@ -32,16 +32,16 @@ function ReserveHereNow() {
   const mealType = getMealType(); 
 
   return (
-    <div className="px-14 pt-10 w-screen md:mb-8">
+    <div className="sm:px-14 px-3 pt-10 w-screen md:mb-8">
       <div className="flex justify-between mb-8">
-        <h1 className="text-3xl font-bold text-gray-800">
+        <h1 className="sm:text-3xl text-xl font-bold text-gray-800">
           Book {mealType} in Kigali now
         </h1>
         <span className="text-sm text-[#DF7117] flex items-center">
           View all <ChevronRight />
         </span>
       </div>
-      <div className="flex gap-5">
+      <div className="flex flex-wrap sm:flex-nowrap gap-5">
         <RestaurantCard {...restaurantData} /> 
         <RestaurantCard {...restaurantData} /> 
         <RestaurantCard {...restaurantData} /> 
