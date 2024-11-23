@@ -2,7 +2,7 @@ import { Button } from "@mui/material";
 import myImage from "../../assets/devices.png";
 const JoinKigal = () => {
   return (
-    <div className="w-full  overflow-hidden relative sm:px-14 pb-10 overflow-hidden">
+    <div className="w-full  overflow-hidden relative sm:px-14 pb-10 ">
       <div className="w-full rounded-[10px] h-full bg-gradient-to-r from-purple-900 via-pink-600 to-orange-500  flex flex-col md:flex-row">
         <div className="md:w-1/2 z-10 flex justify-center py-3 flex-col px-5">
           <h2 className="text-2xl font-bold text-gray-200 mb-6 leading-tight bitter">
