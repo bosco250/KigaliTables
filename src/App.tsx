@@ -1,5 +1,7 @@
+import Footer from "./Components/Footer/Footer"
 import Header from "./Components/Header"
 import Hero from "./Components/Hero"
+import JoinKigal from "./Components/JoinKigaliTable/JoinKigal"
 import ReserveHereNow from "./Components/ReserveHereNow"
 
 function App() {
@@ -9,6 +11,8 @@ function App() {
     <Header/>
     <Hero/>
     <ReserveHereNow/>
+    <JoinKigal/>
+    <Footer/>
     </>
   )
 }

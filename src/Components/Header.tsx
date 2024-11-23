@@ -6,7 +6,7 @@ import { useState } from 'react'
 function Header() {
   const [isInput,setIsInput]=useState(false);
   return (
-    <div className=' w-screen h-28 top-0 left-0 bg-gray-100 z-40 '>
+    <div className=' w-screen h-28 top-0 left-0 bg-gray-100 z-40 overflow-hidden '>
       <div className= " hidden w-full md:flex justify-end md:gap-[20%] h-[20%] text-sm bg-[#151F3E] text-[#DF7117] px-10">
         <span> Call: +250786 888 888</span>
         <span> Email: support@kigalitable.com</span>
@@ -16,7 +16,7 @@ function Header() {
           <div className="flex items-center gap-5">
             <div className='flex items-center'>
             <img src={Logo}  alt="" className='sm:w-20 w-14 rounded-2xl' />
-            <h1 className="sm:text-3xl text-xl font-bold text-[#DF7117] ">KigaliTables</h1>
+            <h1 className="sm:text-3xl text-xl font-bold text-[#DF7117]">KigaliTables</h1>
             </div>
             <div className="sm:flex hidden text-gray-700 gap-1">
             <MapPin/>

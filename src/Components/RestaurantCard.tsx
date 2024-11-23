@@ -34,7 +34,7 @@ const RestaurantCard: React.FC<RestaurantCardProps> = ({
       </div>
       
       <div className="px-4 py-3">
-        <h3 className="text-xl font-bold mb-2">{name}</h3>
+        <h3 className="text-xl text-gray-800 font-bold mb-2">{name}</h3>
         
         <div className="flex items-center justify-between mb-2">
           <div className="flex items-center">
