@@ -1,5 +1,5 @@
 import { MapPin, Search } from 'lucide-react'
-import Logo from '../assets/Logo.png'
+import Logo from '../../assets/Logo.png'
 import { Button } from '@mui/material'
 import { useState } from 'react'
 

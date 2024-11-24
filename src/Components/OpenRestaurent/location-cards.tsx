@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { ChevronDown, MapPin } from 'lucide-react';
 import { Menu, MenuItem } from '@mui/material';
-import image1 from '../../assets/3.png'
+import image1 from '../../assets/3.png';
 
 const RestaurantCard = () => (
   <div className="bg-white p-3 flex gap-4 mb-3 hover:bg-gray-50">
@@ -25,16 +25,13 @@ const RestaurantCard = () => (
 
 const LocationGrid = () => {
   const [anchorEl, setAnchorEl] = useState<null | HTMLElement>(null);
-  const [selectedIndex, setSelectedIndex] = useState<number | null>(null);
 
-  const handleClick = (event: React.MouseEvent<HTMLDivElement>, index: number) => {
+  const handleClick = (event: React.MouseEvent<HTMLDivElement>) => {
     setAnchorEl(event.currentTarget);
-    setSelectedIndex(index);
   };
 
   const handleClose = () => {
     setAnchorEl(null);
-    setSelectedIndex(null);
   };
 
   const locations = Array(9).fill({
@@ -49,7 +46,7 @@ const LocationGrid = () => {
           <div 
             key={index} 
             className="bg-white rounded-lg p-4 shadow-sm border border-gray-200 cursor-pointer hover:shadow-md transition-shadow"
-            onClick={(e) => handleClick(e, index)}
+            onClick={handleClick}
           >
             <div className="flex items-center justify-between">
               <div className="space-y-1">
