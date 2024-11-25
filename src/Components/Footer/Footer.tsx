@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     <footer className="bg-[#1F2937] text-gray-300 py-12 px-14">
       <div className="container mx-auto ">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
+        <div className="flex flex-wrap justify-center sm:justify-between sm:px-14 gap-10">
           <div className='text-sm'>
             <h2 className="text-sm font-semibold mb-4 text-white">KigaliTable</h2>
             <ul className="space-y-3">

@@ -1,4 +1,5 @@
 import React from 'react';
+import { motion } from 'framer-motion'; // Import Framer Motion
 import { Star, MapPin } from 'lucide-react';
 import { Button } from '@mui/material';
 
@@ -24,7 +25,11 @@ const RestaurantCard: React.FC<RestaurantCardProps> = ({
   timeSlots
 }) => {
   return (
-    <div className="sm:max-w-[20rem] rounded-lg overflow-hidden shadow-lg bg-white">
+    <motion.div
+      className="sm:max-w-[20rem] rounded-lg overflow-hidden shadow-lg bg-white"
+      whileHover={{ scale: 1.1 }} // Scale on hover
+      transition={{duration:0.5}}
+    >
       <div className="relative">
         <img 
           src={image}
@@ -65,7 +70,7 @@ const RestaurantCard: React.FC<RestaurantCardProps> = ({
           ))}
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
