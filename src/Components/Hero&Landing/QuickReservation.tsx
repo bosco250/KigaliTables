@@ -172,11 +172,11 @@ function QuickReservation() {
       </div>
 
       {/* Location Input */}
-      <div className="flex items-center gap-5 bg-gray-200 text-gray-800 p-4 rounded-md relative">
+      <div className="flex items-center  bg-gray-200 text-gray-800 p-[14px] pl-4 rounded-md relative">
         <input
           type="text"
           placeholder="Location, or Restaurant"
-          className="h-6 ml-4 px-4"
+          className="h-8 ml-4 px-4"
         />
         <Search className="absolute left-1 top-4" />
       </div>
