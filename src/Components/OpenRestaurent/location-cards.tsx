@@ -18,7 +18,7 @@ const RestaurantCard = () => (<>
         <span>Kg 05 Street</span>
       </div>
       <button className="mt-2 bg-[#DF7117] text-white px-4 py-2 rounded-md text-sm hover:bg-orange-600 transition-colors">
-        Make a reservation now
+        Explore More
       </button>
     </div>
   </div>
