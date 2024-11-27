@@ -1,8 +1,10 @@
-import  { useState } from "react";
+import { useState } from "react";
 import LocationGrid from "./location-cards";
+import RestCard from "./popularRestCard";
+import image2 from '../../assets/4.png'
 
 function OpenRestaurent() {
-  const [activeDiv, setActiveDiv] = useState("locations"); 
+  const [activeDiv, setActiveDiv] = useState("locations");
 
   return (
     <div className="sm:px-14 px-5 mb-5 sm:pt-5">
@@ -26,7 +28,66 @@ function OpenRestaurent() {
         </div>
       </div>
       <div className="w-full flex">
-       {activeDiv==="locations" && <LocationGrid/>}
+        {activeDiv === "locations" && <LocationGrid />}
+        {activeDiv === "restaurants" && (
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-5">
+          <RestCard
+            title="Umucyo Resturaulant"
+            location="Nyamirambo, Kg 05 Street"
+            image={image2}
+            rating={5.0}
+            stars={5}
+          /><RestCard
+          title="Umucyo Resturaulant"
+          location="Nyamirambo, Kg 05 Street"
+          image={image2}
+          rating={5.0}
+          stars={5}
+        /><RestCard
+        title="Umucyo Resturaulant"
+        location="Nyamirambo, Kg 05 Street"
+        image={image2}
+        rating={5.0}
+        stars={5}
+      /><RestCard
+      title="Umucyo Resturaulant"
+      location="Nyamirambo, Kg 05 Street"
+      image={image2}
+      rating={5.0}
+      stars={5}
+    /><RestCard
+    title="Umucyo Resturaulant"
+    location="Nyamirambo, Kg 05 Street"
+    image={image2}
+    rating={5.0}
+    stars={5}
+  /><RestCard
+  title="Umucyo Resturaulant"
+  location="Nyamirambo, Kg 05 Street"
+  image={image2}
+  rating={5.0}
+  stars={5}
+/><RestCard
+            title="Umucyo Resturaulant"
+            location="Nyamirambo, Kg 05 Street"
+            image={image2}
+            rating={5.0}
+            stars={5}
+          /><RestCard
+          title="Umucyo Resturaulant"
+          location="Nyamirambo, Kg 05 Street"
+          image={image2}
+          rating={5.0}
+          stars={5}
+        /><RestCard
+            title="Umucyo Resturaulant"
+            location="Nyamirambo, Kg 05 Street"
+            image={image2}
+            rating={5.0}
+            stars={5}
+          />
+          </div>
+        )}
       </div>
     </div>
   );

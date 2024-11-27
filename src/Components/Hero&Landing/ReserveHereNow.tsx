@@ -43,7 +43,7 @@ function ReserveHereNow() {
             View all <ChevronRight />
           </span>
         </div>
-        <div className="flex flex-wrap sm:flex-nowrap gap-5">
+        <div className="flex flex-wrap justify-between sm:flex-nowrap gap-5">
           <RestaurantCard {...restaurantData} />
           <RestaurantCard {...restaurantData} />
           <RestaurantCard {...restaurantData} />
